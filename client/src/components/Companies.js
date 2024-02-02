@@ -36,7 +36,7 @@ function Companies() {
   const [companies, setCompanies] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8500/api/companies')
+    axios.get('https://klplacementzone.vercel.app/api/companies')
       .then(response => setCompanies(response.data))
       .catch(error => console.error('Error fetching data:', error));
   }, []); 
